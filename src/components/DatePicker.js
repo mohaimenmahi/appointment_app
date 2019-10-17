@@ -26,7 +26,6 @@ class DatePicker extends Component {
     this.setState({ selected: date }, () => {
       console.log(this.state.selected)
       if(this.state.selected != 'Invalid Date' && this.state.selected != null) {
-        console.log('okay!')
         this.setState({ open: true})
       }
     })
@@ -55,6 +54,7 @@ class DatePicker extends Component {
           KeyboardButtonProps={{
             'aria-label': 'change date',
           }}
+          className='check'
         />
         <ListPop 
           timeList={this.state.timeList} 
