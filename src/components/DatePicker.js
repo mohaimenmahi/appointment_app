@@ -7,7 +7,7 @@ import {
 } from '@material-ui/pickers';
 import { TimeArray } from '../data/timings'
 
-import ListPop from './LIstPop'
+import ListPop from './ListPop'
 
 class DatePicker extends Component {
   state = {
@@ -17,6 +17,10 @@ class DatePicker extends Component {
     timeList: TimeArray,
     confirmPop: false
   }
+
+  // componentDidMount() {
+  //   console.log('array size', this.state.timeList.length)
+  // }
 
   handleDateChange = date => {
     this.setState({ selected: date }, () => {
